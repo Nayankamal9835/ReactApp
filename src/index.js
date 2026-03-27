@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ToastContainer } from 'react-toastify';
 import AuthProvider from './context/AuthContext';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -25,15 +25,15 @@ root.render(
     // transition={Bounce}
     />
 
-    
-      <AuthProvider>
-        <BrowserRouter basename='/ReactProject'>
-        <App />
-        </BrowserRouter>
-        
-      </AuthProvider>
 
-    
+    <AuthProvider>
+      <HashRouter>
+        <App />
+      </HashRouter>
+
+    </AuthProvider>
+
+
 
   </React.StrictMode>
 );
