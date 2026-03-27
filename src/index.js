@@ -27,7 +27,10 @@ root.render(
 
     
       <AuthProvider>
+        <BrowserRouter basename='/ReactProject'>
         <App />
+        </BrowserRouter>
+        
       </AuthProvider>
 
     
