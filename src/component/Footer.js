@@ -66,7 +66,7 @@ const Footer = () => {
             {/* Footer Bottom */}
             <div className="footer-bottom text-center p-4 bg-dark text-white mt-5">
                 Designed By
-                <Link to="#" className="text-decoration-none ms-1">
+                <Link to="https://github.com/Nayankamal9835/ReactApp" className="text-decoration-none ms-1">
                     <span className="fw-bold text-danger ">Nayan Kamal</span>
                 </Link>
             </div>
