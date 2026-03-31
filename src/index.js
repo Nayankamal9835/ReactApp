@@ -11,30 +11,24 @@ import { HashRouter } from 'react-router-dom';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ToastContainer
-      position="top-right"
-      autoClose={3000}
-      hideProgressBar={false}
-      newestOnTop={false}
-      closeOnClick={false}
-      rtl={false}
-      pauseOnFocusLoss
-      draggable
-      pauseOnHover
-      theme="light"
-    // transition={Bounce}
-    />
-
-
-    <AuthProvider>
-      <HashRouter>
+    <HashRouter>
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      // transition={Bounce}
+      />
+      <AuthProvider>
         <App />
-      </HashRouter>
-
-    </AuthProvider>
-
-
-
+      </AuthProvider>
+    </HashRouter>
   </React.StrictMode>
 );
 
